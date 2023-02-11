@@ -2,7 +2,7 @@
 FROM tonistiigi/xx@sha256:66ffe58bd25bf822301324183a2a2743a4ed5db840253cc96b36694ef9e269d9 AS xx
 
 # Stage - Build Drone SCP
-FROM  golang:1.20-alpine@sha256:1e2917143ce7e7bf8d1add2ac5c5fa3d358b2b5ddaae2bd6f54169ce68530ef0 as builder
+FROM  golang:1.20-alpine@sha256:8a0bdfe08747034d417c35f5a0cf7ffb37ee63ad3f14585524066b1129cc4c15 as builder
 
 # Copy xx scripts
 COPY --from=xx / /
