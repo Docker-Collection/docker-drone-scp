@@ -26,7 +26,7 @@ RUN apk --update --no-cache add git && \
     xx-verify --static /bin/drone-scp
 
 # Stage - Main Image
-FROM plugins/base:latest@sha256:376d390ebad1ae373b560eb8a03f046644b8c1e674a96738c224f0edcdfddb54
+FROM plugins/base:latest@sha256:86ef1c54a3322ab1be06fbda6902d08350a29bde047944100a89c5c9ae182044
 
 # Copy Drone SCP binary to image
 COPY --from=builder /bin/drone-scp /bin/drone-scp
