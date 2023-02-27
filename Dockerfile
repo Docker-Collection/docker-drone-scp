@@ -14,7 +14,7 @@ ENV GO111MODULE=on
 ENV CGO_ENABLED=0
 
 # renovate: datasource=github-releases depName=appleboy/drone-scp
-ARG DRONE_SCP_VERSION=v1.6.5
+ARG DRONE_SCP_VERSION=v1.6.6
 
 RUN apk --update --no-cache add git && \
     # Git clone specify drone-scp version
